@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&family=Quicksand:wght@300&display=swap');
+
+html {
+
+}
+
+button {
+  outline: none; /* Для синий ободки */
+  border: 0;
+  background: transparent;
+}
+
+body {
+
+}
+
+h1 {
+	/* Параметры текста */
+	font-weight: 350;
+	font-size: 84px;
+}
+
+h2 {
+	/* Параметры текста */
+	font-weight: 350;
+	font-size: 74px;
+}
+
+a {
+	/* Параметры текста */
+	font-weight: 350;
+	font-size: 45px;
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover
+{
+	/* Тень и видимость */
+	text-shadow: 1px 1px 2px green;
+	/* Анимация */
+	transition: 0.2s linear;
+	/* Параметры текста */
+	font-weight: 450;
+}
+
+li {
+	/* Параметры списка */
+	list-style-type: none;
+	line-height: 3;
+	/* Параметры текста */
+	font-weight: 350;
+	font-size: 54px;
+	text-decoration: none;
+}
+
+.all {
+	/* Размер всего сайта */
+	height: 3500px;
+	/* Основной цвет */
+	background-color: #000000;
+}
+
+.scrollToTop {
+	position: fixed;
+	bottom: 0.5%;
+	right: 0.5%;
+	transform: translate(0, 0);
+	transition: transform 0.5s ease;
+}
+
+.scrollToTop:hover {
+	transform: translate(0, -8%);
+}
+
+#header {
+	/* Цвет блока */
+	background-color: #f0f0f0;
+	/* Позиция блока */
+	width: 100%;
+	height: 77px;
+	position: fixed;
+	/* Анимация */
+	-webkit-transition: top .3s ease-out 0s;
+  -moz-transition: top .3s ease-out 0s;
+  -o-transition: top .3s ease-out 0s;
+  transition: top .3s ease-out 0s;
+	animation: animation_mainpage 2s linear;
+	/* Тень и видимость */
+	z-index: 1;
+	/* Параметры текста */
+	font-size: large;
+  font-family: 'Quicksand', sans-serif;
+	text-align: center;
+}
+
+.textheader {
+	/* Позиция блока */
+	left: 50%;
+	top: auto;
+	/* Тень и видимость */
+	opacity: 1;
+	z-index: 2;
+	text-align: center;
+}
+
+.header_link {
+	/* Цвет блока */
+	color: #36393f;
+	/* Позиция блока */
+	border: none;
+	/* Анимация */
+	animation: animation_home 2s linear;
+	/* Параметры текста */
+	font-weight: 350;
+	font-size: 64px;
+	text-decoration: none;
+}
+
+.main_logo {
+	/* Позиция блока */
+	position: absolute;
+  left: 50%;
+  top: 25%;
+	/* Анимация */
+  transform: translate(-50%,-50%);
+}
+
+#menu_logo {
+	/* Цвет блока */
+	background-color: #fff9f5;
+	/* Позиция блока */
+	position: relative;
+	left: calc(50% - 203px);
+	top: 1%;
+	width: 400px;
+	height: 650px;
+	border-radius: 5px;
+	/* Тень и видимость */
+	z-index: 1;
+	box-shadow: 0 0 10;
+	opacity: 0.8;
+}
+
+.hello {
+	/* Позиция блока */
+  position: absolute;
+  left: 50%;
+  top: 40%;
+	/* Анимация */
+  transform: translate(-50%,-50%);
+}
+
+.center_1 {
+	/* Цвет блока */
+	background-color: #22262a;
+	color: #f0f0f0;
+	/* Позиция блока */
+	height: 940px;
+	width: 100%;
+	top: 140px;
+	margin-bottom: auto;
+	/* Анимация */
+	animation: animation_mainpage 2s linear;
+	animation-fill-mode: forwards;
+	/* Параметры текста */
+	font-family: 'Quicksand', sans-serif;
+}
+
+.thisissprintbit
+{
+	/* Позиция блока */
+  position: absolute;
+  left: 50%;
+  top: 60%;
+	/* Анимация */
+  transform: translate(-50%,-50%);
+	/* Параметры текста */
+	text-align: center;
+}
+
+.pointer
+{
+	/* Позиция блока */
+	position: absolute;
+	left: calc(50% - 60px);
+  top: 80%;
+	/* Анимация */
+  transform: translate(-50%,-50%);
+  animation: bounce_1 2s ease infinite;
+}
+
+.center_2 {
+	/* Цвет блока */
+	background-color: #22262a;
+	color: #96c278;
+	/* Позиция блока */
+	height: 1080px;
+	top: auto;
+	width: 100%;
+	/* Параметры текста */
+	font-weight: 400;
+	font-size: 54px;
+	font-family: 'Nunito', sans-serif;
+}
+
+.description {
+	/* Цвет блока */
+	background-color: #f0f0f0;
+	/* Позиция блока */
+	top: 5%;
+	left: 3%;
+	width: 400px;
+	height: 120px;
+	position: relative;
+	border-radius: 1px;
+	/* Анимация */
+	transform: translate(0, 120%);
+	opacity: 0;
+	animation: descriptions 1s ease 1s;
+	animation-fill-mode: forwards;
+	-webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+	/* Параметры текста */
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	/* Параметры рамки */
+	border-style: outset;
+}
+
+.description:hover {
+	background-color: #22262a;
+}
+
+/* Параметры для анимации header */
+
+.fixed-top {
+  top: 0;
+}
+
+.fixed-bottom {
+  top: -75px;
+}
+
+/* Keyframes анимации */
+
+/* Анимация стрелки вниз */
+
+@keyframes bounce_1 {
+  0% { transform: translateY(-50%); }
+  20% {120%
+    opacity: 0.8;
+    transform: translateY(-35%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+}
+
+/* Анимация кнопки "Home" */
+
+@keyframes animation_header_text {
+	0% {
+		opacity: 0;
+		color: #f0f0f0;
+	}
+	100% {
+		opacity: 1;
+		color: #000000;
+	}
+}
+
+@keyframes animation_mainpage {
+	0% {
+		background-color: #22262a;
+		color: #f0f0f0;
+	}
+	100% {
+		background-color: #f0f0f0;
+		color: #000000;
+	}
+}
+
+@keyframes animation_home {
+	0% {
+		background-color: #22262a;
+		color: #f0f0f0;
+	}
+	100% {
+		background-color: #f0f0f0;
+		color: #000000;
+	}
+}
+
+@keyframes descriptions {
+	0% {
+		transform: translate(0, 120%);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}

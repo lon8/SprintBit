@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Использование jQuery метода .scroll() (без параметров и с функцией)</title>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+	$( document ).ready(function(){
+	  $( "button" ).click(function(){ // задаем функцию при нажатиии на элемент <button>
+	    $( "div" ).scroll(); // вызываем событие "scroll" на элементе <div>
+	  });
+	  $( "div" ).scroll(function(){ // задаем функцию при срабатывании события "scroll" на элементе <div>
+	    $( "span" ).text( "Scroll" ) // добавляем текстовое содержимое в элемент <span>
+	               .css({ 
+	                 "display": "inline", // элемент <span> отображается как строчный
+	                 "color": "red" // цвет текста красный
+	               })
+	               .fadeOut( "fast" ); //  плавно изменяем прозрачность элемента <span>
+	  });
+	});
+		</script>
+	</head>
+	<body>
+		<button>Клик</button><span></span><br><br>
+		<div style = "overflow: scroll; width: 150px; height: 150px;">
+			Ромашка — род многолетних цветковых растений семейства Астровые, или Сложноцветные (Asteraceae), объединяет около двадцати видов невысоких пахучих трав, цветущих в первый год жизни. Наиболее известный вид — Ромашка аптечная (Matricaria chamomilla, syn. Matricaria recutita), это растение широко используется в лечебных и косметических целях.
+		</div>
+	</body>
+</html>
